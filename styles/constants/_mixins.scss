@@ -1,0 +1,5 @@
+// @use "../colors/colors";
+
+@mixin setColor($opacity: 10) {
+    background-color: rgba(23,22,29,$opacity);
+}

@@ -1,0 +1,121 @@
+.login_container {
+  display: flex;
+  justify-content: space-between;
+//   flex-direction: column;
+}
+
+.image_container {
+  background-image: url("../../assets/images/login-image.jfif");
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  span:nth-child(1) {
+    font-size: 22px;
+    margin-right: 2px;
+    text-transform: uppercase;
+  }
+}
+
+.login_container {
+  .form_part_container {
+    width: 310px;
+    // padding: 5px;
+
+    .form_title_part {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      span {
+        color: rgb(225, 61, 202);
+        margin-right: 2px;
+        text-transform: uppercase;
+      }
+    }
+    .form_header {
+      text-align: center;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: rgb(86, 93, 94);
+    }
+  }
+}
+
+.form_container_main {
+  background-color: rgb(252, 252, 252);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 13px;
+  height: 340px;
+  .input_flied {
+    margin-bottom: 8px;
+  }
+
+  .forgot_password {
+    text-align: right;
+    a {
+      margin-top: 10px;
+      font-size: 12px;
+      color: rgb(37, 94, 250);
+      text-decoration: none;
+    }
+  }
+
+  .Login_button {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1s;
+    transition-timing-function: ease-in;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      to right,
+      #d161b1 0%,
+      #b344d4 51%,
+      #8c3dd6 100%
+    );
+
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        #8c3dd6 0%,
+        #d161b1 51%,
+        #b344d4 100%
+      );
+    }
+    // background-color: linear-gradient(
+    //   to right,
+    //   rgb(223, 76, 228),
+    //   rgb(92, 67, 180)
+    // );
+  }
+
+  .create_account {
+    text-align: center;
+
+    a {
+      font-weight: 500;
+      margin-top: 20px auto;
+      font-size: 14px;
+      color: rgb(37, 94, 250);
+      text-decoration: none;
+    }
+  }
+}
