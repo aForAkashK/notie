@@ -20,6 +20,7 @@ function Login(props) {
             overlayColor={theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[2]}
             overlayOpacity={0}
             overlayBlur={2}
+            // className={styles.dialog_model}
         >
             <div className={styles.login_container}>
                 <div>

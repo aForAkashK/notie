@@ -43,6 +43,7 @@ const SignUp = (props) => {
             overlayColor={theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[2]}
             overlayOpacity={0}
             overlayBlur={2}
+            // className={styles.dialog_model}
         >
         <div className={styles.signup_container}>
           <div className='image_text'>
