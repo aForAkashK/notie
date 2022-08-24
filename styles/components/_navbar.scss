@@ -1,5 +1,6 @@
 @use "../colors/colors";
 @use "../constants/mixins" as mixin;
+@use "../utils/fonts";
 .nav{
     // background-color: rgba(129, 105, 179,0.2);
     // background-color: colors.$bg_dark;
@@ -13,11 +14,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 .logoText{
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    // font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
     color: aliceblue;
 }
 .buttons{
@@ -25,4 +28,8 @@
     width: 200px;
     justify-content: space-evenly;
     align-items: center;
+    button{
+        font-family: 'Poppins', sans-serif;
+        // letter-spacing: 2px;
+    }
 }

@@ -3,60 +3,65 @@
 @use "components/navbar";
 @use "components/login";
 @use "components/signup";
+@use "utils/fonts";
 
-.container {
-  // padding: 0 2rem;
-  // width: 100%;
-  // height: 100vh;
-  p{
-    color: base.$fg_color;
-  }
-  // background-image: url("../assets/images/home_wave.svg");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-color: colors.$bg_dark;
-  // filter: blur();
+.welcome_wrapper{
+  background-image: url("../assets/images/bg_main_svg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container{
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif !important;
+  height: 100%;
+  overflow: hidden;
   position: relative;
-  // &::before{
-  //   content: "";
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-    width: 100%;
-    height: 100vh;
-    // transform: translate(-50%, -50%);
-    // background-image: url("../assets/images/home_wave.svg");
-    background-image: url("../assets/images/blob-scene-haikei_bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: colors.$bg_dark;
-    // z-index: 1;
-  // filter: blur(2px);
-  // }
-    &::before{
-    content: "";
+
+  .wrapper{
     position: absolute;
-    background-image: url("../assets/images/corner_chip_svg.svg");
+    bottom: 10%;
+    right: 0%;
+    width: 750px;
+    height: 750px;
+    background-image: url("../assets/images/Relax__Alina_Makarenko_png.png");
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
-    top: 0;
-    left: 0;
-    // z-index: -1;
-    width: 100%;
-    height: 100%;
-
   }
-}
-.wrapper{
-  width: 800px;
-  height: 800px;
-  transform: translateX(-10%);
-  // background-color: rgb(149, 108, 247);
-  // background-image: url("../assets/images/concept_edu_png.png");
-  background-image: url("../assets/images/Relax__Alina_Makarenko_png.png");
-  // background-image: url("../assets/images/blob-scene-haikei_bg.svg");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: contain;
 
+  .frame_wrapper{
+    position: absolute;
+    width: 650px;
+    height: 500px;
+    left: 10%;
+    bottom:10%;
+    .main_header{
+      font-size: 100px;
+      font-family: 'Rubik Maze', cursive;
+      text-transform: uppercase;
+      color: whitesmoke;
+      letter-spacing: 1rem;
+      text-align: center;
+      margin-bottom: 0;
+      padding: 0%;
+    }
+    .sub_header{
+      margin-top: -2.6rem;
+      color: rgb(209, 211, 212);
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    .text_cotent{
+      font-size: 23px;
+      font-family: 'Poppins', sans-serif;
+      color: aliceblue;
+      text-align: justify;
+    }
+  }
 }

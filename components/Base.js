@@ -1,12 +1,12 @@
-import { Container } from '@mantine/core';
 import Navbar from './Navbar';
-import Login from './registation/Login';
-
+import Welcome from './welcome/Welcome';
+import styles from "../styles/Home.module.scss"
 function Base() {
 
   return (
-    <div>
+    <div className={styles.welcome_wrapper}>
         <Navbar />
+        <Welcome />
     </div>
   )
 }

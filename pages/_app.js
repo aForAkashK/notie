@@ -2,7 +2,7 @@ import '../styles/globals.scss'
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
-
+import "bootstrap/dist/css/bootstrap.css";
 export default function App(AppProps) {
   const { Component, pageProps } = AppProps;
 

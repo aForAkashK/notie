@@ -1,11 +1,15 @@
 import { Modal, Button, Group, useMantineTheme, TextInput,PasswordInput,Input, Text  } from '@mantine/core';
-// import {Modal} from "@mantine/modals";
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import styles from "../../styles/Home.module.scss"
 function Login(props) {
     
     const theme = useMantineTheme();
+
+    const toRegistration = () => {
+        props.redirect(true);
+        props.setOpen(false);
+    }
   return (
     <>
         <Modal 
@@ -75,7 +79,7 @@ function Login(props) {
                         </button>
                         <div className={styles.create_account}>
                         <a href='#' 
-                        // onClick={changePages}
+                        onClick={toRegistration}
                         >
                             create account
                         </a>

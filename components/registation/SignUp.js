@@ -29,6 +29,11 @@ const SignUp = (props) => {
     props.setOpenSignUp(false);
     props.setOpenLogin(true);
   };
+
+  const toLogin = () => {
+    props.redirect(true);
+    props.setOpen(false);
+  }
   return (
     <>
       <Modal 
@@ -106,7 +111,7 @@ const SignUp = (props) => {
                 </button>
                 <div className={styles.login_account}>
                   <a href='#' 
-                //   onClick={changePages}
+                  onClick={toLogin}
                   >
                     already user <span>Login</span>
                   </a>

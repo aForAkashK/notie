@@ -9,20 +9,20 @@ function Navbar() {
 
   return (
    <>
-    {openLogin && <Login opened = {openLogin} setOpen= {(e) => setOpenLogin(e)} />}
-    {openSignUp && <SignUp opened = {openSignUp} setOpen= {(e) => setOpenSignUp(e)} />}
+    {openLogin && <Login opened = {openLogin} setOpen= {(val) => setOpenLogin(val)} redirect={(val) => setOpenSignUp(val)} />}
+    {openSignUp && <SignUp opened = {openSignUp} setOpen= {(val) => setOpenSignUp(val)} redirect={(val) => setOpenLogin(val)} />}
      <nav className={styles.nav}>
-            <section className={styles.logo}>
-                <text className={styles.logoText}>NOTIE</text>
-            </section>
-            <section className={styles.buttons}>
-                <div>
+        <section className={styles.logo}>
+            <text className={styles.logoText}>NOTIE</text>
+        </section>
+        <section className={styles.buttons}>
+            <div>
                 <Button  color="violet" onClick={() => setOpenLogin(true)}>Login</Button>
             </div>
             <div>
                 <Button  variant="outline" color="violet" onClick={() => setOpenSignUp(true)}>Sign Up</Button>
             </div>
-            </section>
+        </section>
     </nav>
    </>
   )
